@@ -15,7 +15,6 @@ Source:		http://www.cpan.org/modules/by-module/PAR/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Object::Signature is an abstract base class that you can inherit from in order
