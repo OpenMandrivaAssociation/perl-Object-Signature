@@ -1,15 +1,15 @@
 %define upstream_name	 Object-Signature
-%define upstream_version 1.07
+%define upstream_version 1.08
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Generate cryptographic signatures for objects
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/PAR/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/karenetheridge/Object-Signature
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Object-Signature-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
