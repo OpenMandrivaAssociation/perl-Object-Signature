@@ -1,15 +1,13 @@
 %define upstream_name	 Object-Signature
-%define upstream_version 1.08
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.08
+Release:	2
 
 Summary:	Generate cryptographic signatures for objects
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/Object-Signature
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Object-Signature-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Object-Signature-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ Object::Signature is an abstract base class that you can inherit from in order
 to allow your objects to generate unique cryptographic signatures.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod 644 README Changes lib/Object/Signature.pm
 
 %build
@@ -46,9 +44,7 @@ make test
 
 * Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 1.50.0-1mdv2011.0
 + Revision: 407955
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.05-4mdv2009.0
+- rebuild using %1.08 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.05-4mdv2009.0
 + Revision: 258146
 - rebuild
 
